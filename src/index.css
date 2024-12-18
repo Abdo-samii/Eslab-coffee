@@ -1,0 +1,28 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.cart {
+    position: sticky;
+    top: 0; /* يبقى ثابتًا في الأعلى أثناء التمرير */
+    width: 25%; /* يمكنك تحديد العرض المناسب */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    max-height: 100vh; /* بحيث يظل داخل الشاشة */
+    overflow-y: auto; /* للسماح بالتمرير داخل السلة إذا كان هناك منتجات كثيرة */
+    z-index: 10;
+  }
+  .cart {
+    position: fixed;
+    top: 64px; /* المسافة من أعلى الشاشة */
+    right: 0; /* التثبيت في الجهة اليمنى */
+    width: 300px; /* عرض ثابت */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    max-height: 100vh; /* بحيث يظل داخل الشاشة */
+    overflow-y: auto; /* للسماح بالتمرير داخل السلة */
+    z-index: 10;
+  }
+  
